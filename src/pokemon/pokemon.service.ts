@@ -26,6 +26,16 @@ export class PokemonService {
     }
   }
 
+  async hardCreate(createPokemonDto: CreatePokemonDto[]) {
+    try {
+      await this.pokemonModel.insertMany(createPokemonDto);
+
+      return 'Hard insert done';
+    } catch (error) {
+      this.handleExceptions(error);
+    }
+  }
+
   async findAll() {
   
     let pokemons: Pokemon[] = await this.pokemonModel.find();
@@ -74,6 +84,12 @@ export class PokemonService {
     if (!info.deletedCount) throw new NotFoundException(`Pokemon with id "${id}" not found for deletion`);
 
     return info;
+  }
+
+  async fullRemove() {
+    await this.pokemonModel.deleteMany({});
+
+    return 'Pokemon Collection has been deleted successfully';
   }
 
   private handleExceptions(error: any): void {
