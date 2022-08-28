@@ -106,7 +106,9 @@ as DELETE method:
 
 ---
 ## Seed Endpoint
+<a name="seed-endpoint">
 This endpoint is used for fetching pokemons from PokeApi and insert them into the database.
+</a>
 
 as GET method:
 ```javascript
