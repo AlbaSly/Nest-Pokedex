@@ -18,7 +18,7 @@
 
 4. Up Database with ```docker-compose up-d```
 
-5. If you want to load data into the database, you will need to use the [Seed Endpoint]('#seed-endpoint)
+5. If you want to load data into the database, you will need to use the [Seed Endpoint](#seed-endpoint)
 
 ## Running the app
 
@@ -106,9 +106,8 @@ as DELETE method:
 
 ---
 ## Seed Endpoint
-<a name="seed-endpoint">
+
 This endpoint is used for fetching pokemons from PokeApi and insert them into the database.
-</a>
 
 as GET method:
 ```javascript
