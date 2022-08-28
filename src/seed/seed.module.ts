@@ -1,11 +1,12 @@
 import { Module } from '@nestjs/common';
-import { SeedService } from './seed.service';
-import { SeedController } from './seed.controller';
-import { HttpModule } from '@nestjs/axios';
+
+import { CommonModule } from 'src/common/common.module';
 import { PokemonModule } from 'src/pokemon/pokemon.module';
 
+import { SeedService } from './seed.service';
+import { SeedController } from './seed.controller';
 @Module({
-  imports: [HttpModule, PokemonModule],
+  imports: [CommonModule, PokemonModule],
   controllers: [SeedController],
   providers: [SeedService]
 })
