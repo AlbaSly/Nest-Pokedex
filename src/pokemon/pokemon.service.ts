@@ -38,7 +38,7 @@ export class PokemonService {
 
   async findAll() {
   
-    let pokemons: Pokemon[] = await this.pokemonModel.find();
+    let pokemons: Pokemon[] = await this.pokemonModel.find().limit(5).skip(5);
 
     return pokemons;
   }
