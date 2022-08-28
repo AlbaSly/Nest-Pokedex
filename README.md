@@ -33,15 +33,16 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+
 ---
 
-## Endpoints
 
+# Endpoints
 ```
 {{API_URL}} = http://localhost:{your_port}/api/v1/
 ```
-
-
+---
+## Pokemon Endpoint
 ### Get Pokemons
 
 as GET method:
@@ -101,4 +102,13 @@ as DELETE method:
 
 //Id must be valid mongo id
 {{API_URL}}/pokemon/630a7942816c4d85e01b5ad6
+```
+
+---
+## Seed Endpoint
+This endpoint is used for fetching pokemons from PokeApi and insert them into the database.
+
+as GET method:
+```javascript
+{{API_URL}}/seed/
 ```
