@@ -7,6 +7,7 @@
 ## Tech Stack Used
 * Nest
 * MongoDB
+* Docker
 
 ## How to run this
 1. Clone the repo
@@ -15,10 +16,9 @@
 
 3. You must need already have CLI installed: ```npm i -g @nestjs/cli```
 
-4. Up Database
-```
-docker-compose up-d
-```
+4. Up Database with ```docker-compose up-d```
+
+5. If you want to load data into the database, you will need to use the [Seed Endpoint]('/#seed-endpoint)
 
 ## Running the app
 
