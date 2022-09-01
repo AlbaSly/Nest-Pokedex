@@ -12,7 +12,10 @@ async function bootstrap() {
     //Use de pipes de validación a nivel global de aplicación 
     new ValidationPipe({
       whitelist: true,
-      forbidNonWhitelisted: true
+      forbidNonWhitelisted: true,
+      transformOptions: {
+        enableImplicitConversion: true
+      }
     })
   );
 
