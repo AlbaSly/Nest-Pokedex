@@ -18,7 +18,11 @@
 
 4. Up Database with ```docker-compose up-d```
 
-5. If you want to load data into the database, you will need to use the [Seed Endpoint](#seed-endpoint)
+5. Clone file _.env.template_ and rename the copy to _.env_
+
+6. Set the vars values in _.env_ (check example in the _.env.template_ first!)
+
+7. Once the project is [running](#running-the-app) and if you want to load data into the database, you will need to use the [Seed Endpoint](#seed-endpoint)
 
 ## Running the app
 
@@ -35,8 +39,6 @@ $ npm run start:prod
 
 
 ---
-
-
 # Endpoints
 ```
 {{API_URL}} = http://localhost:{your_port}/api/v1/
