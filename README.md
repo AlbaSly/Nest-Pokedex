@@ -37,7 +37,21 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+---
+# Dockerization
+1. Create ```.env.prod``` file.
+2. Set the environment variables in ```.env.prod``` file (use ```.env.template``` file for reference).
+3. Build the image:
+    ```
+    docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+    ```
 
+## Running the app
+
+* Once you have built the docker image:
+  ```
+  docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
+  ```
 ---
 # Endpoints
 ```
