@@ -12,7 +12,7 @@
 ## How to run this
 1. Clone the repo
 
-2. Exec with ```yarn install```
+2. Exec with ```npm install```
 
 3. You must need already have CLI installed: ```npm i -g @nestjs/cli```
 
